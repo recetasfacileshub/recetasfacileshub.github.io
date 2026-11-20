@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cómo escalar cualquier receta — Recetas Fáciles</title>
+<meta name="description" content="Cómo escalar cualquier receta: la regla del factor de escala, qué ingredientes no se ajustan igual y cómo adaptar el tiempo de cocción.">
+<meta name="theme-color" content="#14532d">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<style>
+:root{--dark:#14532d;--dark2:#166534;--acc:#c2410c;--accd:#9a3412;--accbg:#ffedd5;
+--bg:#f7f5ef;--text:#1f2937;--muted:#6b7280;--border:#e5e7eb;--red:#b91c1c;--red-bg:#fee2e2;--radius:14px;
+--shadow:0 1px 3px rgba(0,0,0,.08),0 4px 14px rgba(0,0,0,.06)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.65}
+.wrap{max-width:860px;margin:0 auto;padding:0 16px}
+a{color:var(--accd)}
+header{background:var(--dark);color:#fff;position:sticky;top:0;z-index:50;box-shadow:0 2px 10px rgba(0,0,0,.25)}
+.header-in{display:flex;align-items:center;gap:14px;padding:13px 16px;max-width:1080px;margin:0 auto;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:#fff;flex:1;min-width:200px}
+.brand .mark{width:38px;height:38px;border-radius:9px;background:var(--acc);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:19px;flex:none}
+.brand b{font-size:19px;letter-spacing:.2px}
+.brand b span{color:var(--acc)}
+.brand small{display:block;font-size:11.5px;color:#d1d5db;font-weight:400}
+nav.main-nav{display:flex;gap:4px;flex-wrap:wrap}
+nav.main-nav a{color:#e5e7eb;text-decoration:none;font-size:14px;font-weight:600;padding:8px 11px;border-radius:8px}
+nav.main-nav a:hover{background:var(--dark2);color:#fff}
+.article{padding:26px 0 12px}
+.back{margin-bottom:10px}
+.back a{font-weight:700;text-decoration:none}
+.back a:hover{text-decoration:underline}
+.crumb{font-size:12.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--accd);margin-bottom:6px}
+.article h1{font-size:clamp(26px,4.5vw,34px);line-height:1.25;margin-bottom:10px}
+.lede{font-size:17px;color:#374151;margin-bottom:22px}
+.article h2{font-size:21px;margin:28px 0 8px;padding-top:6px;border-top:2px solid var(--acc);display:inline-block}
+.article h3{font-size:17px;margin:18px 0 6px}
+.article p{font-size:15.5px;color:#1f2937;margin-bottom:12px}
+.article ul,.article ol{margin:0 0 14px 22px;font-size:15.5px;color:#1f2937}
+.article li{margin-bottom:6px}
+.article table{border-collapse:collapse;width:100%;font-size:14px;margin:12px 0 16px;background:#fff;border-radius:10px;overflow:hidden;box-shadow:var(--shadow)}
+.article th{background:var(--dark);color:#fff;text-align:left;padding:10px 12px}
+.article td{padding:9px 12px;border-bottom:1px solid var(--border)}
+.article tr:nth-child(even) td{background:#f9fafb}
+.tip{background:var(--accbg);border-left:4px solid var(--acc);border-radius:10px;padding:14px 16px;margin:22px 0;font-size:14.5px}
+.warn{background:var(--red-bg);border-left:4px solid var(--red);border-radius:10px;padding:14px 16px;margin:22px 0;font-size:14.5px;color:#7f1d1d}
+.related{background:var(--accbg);border:1px solid var(--border);border-radius:12px;padding:16px 18px;margin:22px 0}
+.related h3{font-size:15px;margin:0 0 8px}
+.related ul{margin:0 0 0 20px}
+.related li{margin-bottom:4px}
+footer{background:var(--dark);color:#d1d5db;margin-top:44px;padding:30px 0 26px}
+footer .cols{display:grid;grid-template-columns:1fr;gap:20px}
+@media(min-width:640px){footer .cols{grid-template-columns:2fr 1fr 1fr}}
+footer h4{color:#fff;font-size:15px;margin-bottom:10px}
+footer p,footer a{font-size:13.5px;color:#d1d5db;text-decoration:none}
+footer a:hover{color:#fff}
+footer ul{list-style:none}
+footer li{margin-bottom:6px}
+.copy{border-top:1px solid rgba(255,255,255,.15);margin-top:22px;padding-top:16px;font-size:12.5px;text-align:center}
+</style>
+</head>
+<body>
+<header><div class="header-in">
+<a class="brand" href="../index.html"><span class="mark">RF</span><span><b>Recetas <span>Fáciles</span></b><small>Recetas sencillas y ricas para cada día</small></span></a>
+<nav class="main-nav"><a href="../index.html#calculadoras">Calculadoras</a><a href="../index.html#referencia">Tabla de referencia</a><a href="../index.html#guias">Guías</a><a href="../index.html#faq">Preguntas frecuentes</a></nav></div></header>
+<main class="wrap article">
+<p class="back"><a href="../index.html">← Volver a Recetas Fáciles</a></p>
+<p class="crumb">Técnica</p>
+<h1>Cómo escalar cualquier receta</h1>
+
+<p class="lede">Escalar una receta es multiplicar o dividir sus cantidades para que alcance para más o menos gente. La idea es sencilla, pero hay ingredientes que no obedecen a la regla y un par de trampas que estropean el resultado.</p>
+<h2>La regla del factor</h2>
+<p>El factor de escala es el número por el que multiplicas cada cantidad: porciones que quieres divididas entre porciones de la receta. Si la receta es para 4 y cocinas para 6, el factor es 6 ÷ 4 = 1,5. Si es para 8 y cocinas para 4, el factor es 0,5. El escalador de esta página hace el cálculo por ti: solo tienes que escribir las cantidades.</p>
+<h2>Qué se escala igual y qué no</h2>
+<p>La mayoría de los ingredientes —harina, arroz, verduras, carne, líquidos— se multiplican tal cual. Pero hay tres grupos que conviene tratar aparte:</p>
+<ul>
+<li><strong>Sal y especias fuertes:</strong> sube menos de lo que dice el factor. Si duplicas, empieza con 1,5 veces y prueba antes de añadir más. Siempre se puede añadir; quitar es imposible.</li>
+<li><strong>Levadura y bicarbonato:</strong> en repostería no se duplican sin más, porque un exceso deja sabor amargo y hunde el bizcocho. Sube como mucho 1,5 veces al duplicar.</li>
+<li><strong>Aceite para freír:</strong> no hace falta duplicarlo: basta con que cubra la base de la sartén.</li>
+</ul>
+<h2>El tiempo de cocción no se escala</h2>
+<p>Un bizcocho doble no tarda el doble en el horno: tarda más, pero no el doble, porque el calor llega antes al centro de lo que imaginas. La regla práctica es añadir un 25 % más de tiempo y comprobar con un palillo. Con la carne pasa igual: un asado de 2 kg no tarda el doble que uno de 1 kg, sino alrededor de un 50 % más.</p>
+<h2>El tamaño del molde sí importa</h2>
+<p>Si duplicas un bizcocho y lo metes en el mismo molde, quedará crudo por dentro y quemado por fuera. Usa un molde más grande o reparte la masa en dos moldes. Como orientación, un molde de 20 cm sirve para 4 personas y uno de 26 cm para 8.</p>
+<table><tr><th>De → a</th><th>Factor</th><th>Ejemplo (200 g de harina)</th></tr>
+<tr><td>4 → 2</td><td>0,5</td><td>100 g</td></tr>
+<tr><td>4 → 6</td><td>1,5</td><td>300 g</td></tr>
+<tr><td>4 → 8</td><td>2</td><td>400 g</td></tr>
+<tr><td>4 → 12</td><td>3</td><td>600 g</td></tr></table>
+<div class="tip"><strong>Consejo:</strong> anota el factor en la receta antes de empezar a pesar. Es el error más común: escalar de cabeza y olvidar un ingrediente.</div>
+
+<div class="related"><h3>También te puede interesar</h3><ul><li><a href="cenas-faciles-entre-semana.html">10 cenas fáciles entre semana</a></li><li><a href="imprescindibles-despensa.html">Imprescindibles de la despensa</a></li><li><a href="habilidades-basicas-cuchillo.html">Habilidades básicas con el cuchillo</a></li></ul></div>
+</main>
+<footer><div class="wrap"><div class="cols">
+<div><h4>Recetas Fáciles</h4><p>Recetas sencillas y ricas para cada día</p></div>
+<div><h4>Guías de cocina</h4><ul><li><a href="cenas-faciles-entre-semana.html">10 cenas fáciles entre semana</a></li><li><a href="como-escalar-recetas.html">Cómo escalar cualquier receta</a></li><li><a href="imprescindibles-despensa.html">Imprescindibles de la despensa</a></li><li><a href="habilidades-basicas-cuchillo.html">Habilidades básicas con el cuchillo</a></li><li><a href="meal-prep-principiantes.html">Meal prep para principiantes</a></li><li><a href="guardar-sobras-seguridad.html">Cómo guardar las sobras de forma segura</a></li></ul></div>
+<div><h4>Herramientas de cocina</h4><ul><li><a href="../index.html#calculadoras">Escalador de recetas</a></li><li><a href="../index.html#calculadoras">Conversor de unidades</a></li><li><a href="../index.html#calculadoras">Estimador de calorías por porción</a></li><li><a href="../index.html#calculadoras">Buscador de sustituciones</a></li><li><a href="../index.html#calculadoras">Planificador de comidas y lista de la compra</a></li></ul></div>
+</div><p class="copy">&copy; 2026 Recetas Fáciles. Todos los derechos reservados.</p></div></footer>
+</body>
+</html>
